@@ -21,7 +21,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-			
+				background-image: url("images/moon.jpg");
 		}
 		header h1{
 			font-size: 50px;
@@ -34,7 +34,7 @@
 		}
 		
 		.flex-container div{
-			background-color:aqua;
+			background-color:orange;
 			margin: 10px;
 		}
 	
@@ -63,7 +63,35 @@
 			
 		}
 		
+
+		#item6{
+			flex:25%;
+			
+		}
 		
+		#item7{
+			flex:50%;
+			
+		}
+		
+		#item8{
+			flex:25%;
+			
+		}
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
+		
+		footer {
+			
+			background-color: #160102;
+			padding: 50px 0px;
+			
+		}
 		
 	</style>
 </head>
@@ -88,5 +116,17 @@
 		<div id="item5">5</div>
 	</div>
 	
+	
+	
+	<footer>
+		<div class="flex-container">
+		<div id="item6">6</div>
+		<div id="item7">2</div>
+		<div id="item8">3</div>
+	</div> 
+	
+
+	</footer>
+
 </body>
 </html>
